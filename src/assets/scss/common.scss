@@ -12,12 +12,18 @@ img{vertical-align:top;}
 a{text-decoration:none; cursor:pointer;}
 $w:100%;
 *{
-  font-family: 'Wemakeprice-SemiBold';
-  font-size: 18px;
+  font-family: 'Noto Sans KR', '微软雅黑', '맑은 고딕', 'Malgun Gothic', '돋움', Dotum, Tahoma, Geneva, sans-serif;
+  font-size: 10px;
   word-break: keep-all;
   box-sizing: border-box;
   outline: none;
   margin:0; padding:0;
+  line-height: 140%;
+  background-color:#888;
   text-transform: uppercase;
 }
 html{scroll-behavior: smooth;}
+
+.content_center{
+  max-width:1200px; margin:0 auto;
+}
