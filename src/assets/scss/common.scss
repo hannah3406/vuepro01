@@ -19,7 +19,7 @@ $w:100%;
   outline: none;
   margin:0; padding:0;
   line-height: 140%;
-  background-color:#888;
+  background-color:transparent;
   text-transform: uppercase;
 }
 html{scroll-behavior: smooth;}
@@ -27,3 +27,5 @@ html{scroll-behavior: smooth;}
 .content_center{
   max-width:1200px; margin:0 auto;
 }
+
+.pointer{cursor:pointer;}

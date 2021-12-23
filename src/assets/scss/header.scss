@@ -1,15 +1,37 @@
 .header_wrap{
   width:100%;
+  position:absolute; top:0; left:0;
+  z-index:99;
+  .head_top{
+    display:flex; justify-content: flex-end; align-items: center;
+    max-width:1200px; margin:10px auto; padding:0 30px;
+
+    .head_top_li{
+      color: #fff;
+      font-size:1.4rem; font-weight:400;
+      padding:0 12px;
+      position:relative;
+      &:after{
+        content:'';
+        position:absolute; top:50%; transform:translateY(-50%); left:0;
+        width:1px; height:14px;
+        background-color:#909090;
+      }
+
+      &:first-child{
+        &:after{display:none;}
+      }
+    }
+  }
   .header{
     height:90px;
     padding: 0 30px;
     border-radius: 60px;
     background-color: #fff;
     display:flex; justify-content: space-between; align-items:center;
-    margin-top:38px;
     .logo_wrap{
       width:183px; height:50px;
-      background-color:red;
+      >img{width:100%; height:100%; background: white;}
     }
     .menu_wrap{
       display:flex; justify-content: space-between; align-items:center;
@@ -21,7 +43,7 @@
         font-weight: 500;
         padding:0 20px;
         &.menu_li_bg{
-          background-color: #108866;
+          background-color: #17a27b;
           min-width: 140px;
           height: 44px;
           line-height: 44px;
@@ -31,6 +53,7 @@
           text-align: center;
           border-radius: 44px;
           margin-left:30px;
+
         }
       }
     }
